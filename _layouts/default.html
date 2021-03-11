@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- 
+    REFERENCES:
+      https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet 
+    -->
+  </head>
+  <body>
+    <div class="wrapper">
+      
+      <header> 
+        <h1 align="center"><a href="{{ site.baseurl }}/"> {{ site.name }} </a></h1>
+
+        
+        <div align="center"> 
+          <a href="https://www.linkedin.com/in/yaroslav-burdin/" class="fa fa-linkedin-square" style="font-size:36px">  </a> 
+          <a href="/pdf/Yaroslav_Burdin_resume.pdf" class="fa fa-file-text-o" style="font-size:36px">  </a> 
+          <a href="https://github.com/yar-bur" class="fa fa-github" style="font-size:36px">  </a>
+          <a href="https://www.facebook.com/yaroslav.burdin.1" class="fa fa-facebook" style="font-size:36px">  </a> 
+          <a href="https://www.instagram.com/theyaroslavburdin/" class="fa fa-instagram" style="font-size:36px">  </a> 
+          {% if page.home == 1 %}
+          <br><br>
+          
+
+          <img class="circular--portrait" src = "{{site.logo}}?raw=true">
+          <br><br>
+          Welcome to my website! I am an aspiring Data Scientist who believes in the power of data and the effect it has on us, both positive and negative.
+          <br><br>
+          Have any questions or project proposals? <a href="mailto:yaroslavburdin@gmail.com?Subject=Hello%20from%20your%20page" target="_top"><b>Hit</b></a> me up, I am always happy to hear from people with cool ideas and projects.
+
+          <br><br>
+          
+          {% endif %}
+        </div>
+
+          
+
+        {% if page.home == 0 %}
+          {% include nav.html posts=site.pages %}
+        {% endif %}
+
+        
+
+
+      </header>
+      
+      <section>
+        <div id="main" role="main" class="container">
+          {{ content }}
+        </div>
+      </section>
+
+      
+      <footer>
+        <!-- CREDIT FOR THIS PROJECT GOES TO STEVE SMITH (removed for aesthetics) -->
+        <!-- <p><small>OG template credit to: <a href="http://github.com/orderedlist">Steve Smith</a></small></p> -->
+      </footer>
+    </div>
+    <!-- <script src="javascripts/scale.fix.js"></script> -->
+    {% include analytics.html %}
+  </body>
+</html>

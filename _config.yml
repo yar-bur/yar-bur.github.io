@@ -72,10 +72,10 @@ social:
 
 
 # Analytics
-google_analytics: UA-190615080-1
+
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
-  google:
+  google: UA-190615080-1
     tracking_id          :
 
 

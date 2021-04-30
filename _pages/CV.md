@@ -20,7 +20,7 @@ Russian School of Mathematics
 
 **Site Operations Manager**  
 Russian School of Mathematics  
-*Winter 2021 - Current*  
+*Spring 2021 - Current*  
 • Providing operational and technical application and system support to the RSM custimers and business functions
 
 **Data Engineer**  

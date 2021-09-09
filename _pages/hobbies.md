@@ -7,7 +7,7 @@ redirect_from:
   - /hobbies
 ---
 
-* [Chess](https://www.chess.com/stats/live/rapid/yaroslavburdin) (competent)
+* Chess (competent)
 * American Pool (competent)
 * Swimming/Running/Cycling (advanced beginner)
 * [Motorcycling](motorcycling.md) (advanced beginner)
